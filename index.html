@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Cocktail | Predict Your Mood</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Starry Night Sky -->
+    <div class="night-sky">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+        <div class="shooting-star"></div>
+        <div class="shooting-star" style="animation-delay: 3s;"></div>
+        <div class="shooting-star" style="animation-delay: 6s;"></div>
+    </div>
+    
+    <!-- Single Page Container -->
+    <div id="main-container" class="main-container">
+        
+        <!-- Header (Always Visible) -->
+        <div class="header" id="app-header">
+            <h1>Soul Cocktail</h1>
+            <p class="subtitle" id="subtitle-text">Tap bubbles to craft your personalized cocktail</p>
+        </div>
+        
+        <!-- Bubble Selection Section -->
+        <div id="bubble-section" class="content-section active">
+            <div id="bubble-container"></div>
+        </div>
+        
+        <!-- Fusion Animation Overlay -->
+        <div id="fusion-overlay" class="fusion-overlay">
+            <div class="fusion-container">
+                <div class="fusion-animation"></div>
+                <p class="fusion-text">Mixing your soul cocktail...</p>
+            </div>
+        </div>
+        
+        <!-- Result Section -->
+        <div id="result-section" class="content-section">
+            <div class="result-container">
+                <div class="cocktail-image">
+                    <div class="glass">
+                        <div class="glass-rim"></div>
+                        <div class="bubble-particle"></div>
+                        <div class="bubble-particle"></div>
+                        <div class="bubble-particle"></div>
+                        <div class="bubble-particle"></div>
+                        <div class="cocktail-garnish">🍋</div>
+                        <div class="cocktail-garnish-2">🌿</div>
+                    </div>
+                </div>
+                
+                <h2 class="cocktail-name" id="cocktail-name"></h2>
+                
+                <div class="ingredients">
+                    <h3>Ingredients</h3>
+                    <div id="ingredients-list"></div>
+                </div>
+                
+                <div class="description">
+                    <h3>Why This Cocktail Fits You</h3>
+                    <p id="description-text"></p>
+                </div>
+                
+                <div class="suggestion">
+                    <h3>Daily Spark</h3>
+                    <p id="suggestion-text"></p>
+                </div>
+                
+                <div class="actions">
+                    <button id="share-btn" class="share-btn">Share</button>
+                    <button id="restart-btn" class="restart-btn">Try Again</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Selection Bar (Fixed at Bottom) -->
+        <div class="selection-bar" id="selection-bar">
+            <div class="selected-bubbles" id="selected-bubbles"></div>
+            <button id="generate-btn" class="generate-btn" disabled>
+                <span>Generate</span>
+                <span class="count">(0/3)</span>
+            </button>
+        </div>
+        
+    </div>
+
+    <script src="data-en.js"></script>
+    <script src="app-en.js"></script>
+</body>
+</html>
